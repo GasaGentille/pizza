@@ -1,0 +1,16 @@
+nav>ul>li{
+    display:inline-block;
+    box-shadow: 2px 2px 5px #c0c0c0;
+   
+   
+ }
+ 
+ nav{
+   margin-left:60px;
+   
+ }
+ nav>ul>li>a{
+ padding: 60px;
+ text-decoration: none;
+ margin:auto;
+ }
