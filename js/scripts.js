@@ -1,3 +1,7 @@
+// function Pizza(element){
+//     this.element = element;
+// }
+
 var item = "";
 function getSelectedItem(sel) {
     item = sel.options[sel.selectedIndex].text;
@@ -19,7 +23,7 @@ function getSelectedItem(sel) {
       
   }
   
-  function checkedutton(smRadioBtn){
+  function checkedbutton(smRadioBtn){
     var smRadioBtn = document.querySelectorAll(".sm-radio-btn")
     var sommes = 0;
     var allItem =""
