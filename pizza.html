@@ -11,30 +11,150 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
-   <div id="header">
-       <!-- <div class="container"> -->
-          <div class="row">
-              <div class="col-md-6">
-                  <h1>PIZZA YOU WANT!</h1>
-              </div>
-              <!-- <div class="col-md-4">
-                   <img src="images/veg_pizza.jpeg">
-              </div> -->
-              <div class="col-md-6">
-                    <div id="banner">
-                            <nav>
-                              <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#meu.html">Menu</a></li>
-                                <li><a href="#order.footer">Order</a></li>
-                                 <li><a href="delivery">Delivery</a></li>
-                              </ul>
-                            </nav>
-                          </div>
-              </div>
-          </div>
-        <!-- </div> -->
-   
-    </div> 
+
+    <div class="jumbotron">
+      <h1>PIZZA YOU WANT!</h1>
+    
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <h2>  Our Story!</h2>
+        <p>All our Pizzas are Homemade from scratch using the finest cheese available. We do everything by hand: cut our own vegetables, create our own pizza sauce & make our own dough daily all with the finest, freshest ingredients. In our large family dining room our friendly staff makes you feel at home. We welcome you & your family to <strong>The pizza you want!</strong>. Please come Join us in our spacious dining room or Outdoor Patio! </p>
+        <h3>Dear customer,</h3>
+        <p>Kindly we want to let you know that this website is for you, So whenever you want to look for our our special pizza, our special menu and to order your pizza size,toppings and it's Crusts kindly start by choose the size of pizza found in the right of our page. </p>
+      </div>
+      <div class="col-md-4"></select>
+        <label for="Pizza_size">Choose the size of pizza</label>
+        <select id="select-item" onchange="getSelectedItem(this)">
+          <option selected>[--select--]</option>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select><br>
+        <img src="images/small_piza.jpg">
+      </div>
+    </div>
+
+    <form > 
+      <div class="row pizza small">
+        <div class="col-md-3">
+          <img src="images/small_piza.jpg" width="60%">
+       </div>
+       <div class="col-md-3 toppings">
+          <label><h3>Choose Pizza toppings:</h3></label><br>
+          <label>
+            <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Pepperona  &nbsp;<strong> Price:  Rwf <span>  2000</span> </strong>
+          </label><br>
+          <label>
+            <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Mushrooms &nbsp; <strong>  Price:  Rwf <span>2500 </span></strong>
+          </label><br>
+          <label>
+            <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Sausage  &nbsp; <strong>  Price:  Rwf <span>2000 </span></strong>
+          </label><br>
+          <label>
+            <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Onions  &nbsp; <strong> Price:  Rwf <span> 1000 </span></strong>
+          </label><br>
+          <label>
+            <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Extracheese &nbsp;  <strong> Price:  Rwf <span>2000 </span></strong>
+          </label><br>
+          <label>
+            <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Bacon &nbsp; <strong> Price:  Rwf <span> 3000 </span></strong>
+          </label><br>
+        </div>
+        <div class="col-md-3">
+          <label> <h3>Choose Pizza Crusts:</h3></label><br>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">   
+           Thin Crust &nbsp;<strong> Price:  Rwf <span>  1000</span> </strong><br>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Flatbread Crust &nbsp;<strong> Price:  Rwf <span>  1000</span> </strong><br>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Crispy crust &nbsp;<strong> Price:  Rwf <span>  2000</span> </strong><br>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Stuffed crust &nbsp;<strong> Price:  Rwf <span>  3000</span> </strong><br>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Gluten-free &nbsp;<strong> Price:  Rwf <span>  4000</span> </strong><br>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Thick Crust &nbsp;<strong> Price:  Rwf <span>  5000</span> </strong><br>
+        </div>
+        <button type="submit" class="btn-checkout">Checkout</button>
+        <div class="col-md-3 checkout"></div>
+        <p></p>
+    </div>
+    <div class="row pizza medium">
+      <div class="col-md-4" >
+        <img src="images/big_mushroon.jpg" width="80%">
+      </div>
+      <div class="col-md-4 toppings">
+          <label><h3> Choose Pizza toppings:</h3></label><br>
+          <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Pepperona  &nbsp;<strong> Price:  Rwf <span>  3000</span> </strong>
+        </label><br>
+        <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Mushrooms &nbsp;<strong> Price:  Rwf <span> 3500</span> </strong>
+        </label><br>
+        <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Sausage&nbsp;<strong> Price:  Rwf <span>  3000</span> </strong>
+        </label><br>
+        <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Onions &nbsp;<strong> Price:  Rwf <span>  1500</span> </strong>
+        </label><br>
+        <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Extracheese  &nbsp;<strong> Price:  Rwf <span>  3000</span> </strong>
+        </label><br>
+        <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Bacon &nbsp;<strong> Price:  Rwf <span>  4000</span> </strong>
+        </label><br>
+      </div>
+      <div class="col-md-4">
+        <label> <h3>Choose Pizza Crusts:</h3></label><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Thin Crust &nbsp;<strong> Price:  Rwf <span>  2000</span> </strong><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Flatbread Crust &nbsp;<strong> Price:  Rwf <span>  2000</span> </strong><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Crispy crust &nbsp;<strong> Price:  Rwf <span>  3000</span> </strong><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Stuffed crust &nbsp;<strong> Price:  Rwf <span>  4000</span> </strong><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Gluten-free &nbsp;<strong> Price:  Rwf <span>  5000</span> </strong><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Thick Crust &nbsp;<strong> Price:  Rwf <span>  6000</span> </strong><br>
+      </div>
+      <button type="submit" class="btn-checkout">Checkout</button>
+      <div class="col-md-3 checkout"></div>
+    </div>
+    <div class="row pizza large">
+      <div class="col-md-4">
+        <img src="images/magic-mushroom-pizza2.jpg" width="100%">
+      </div>
+      <div class="col-md-4 toppings">
+        <label><h3> Choose Pizza toppings:</h3></label><br>
+        <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Pepperona  &nbsp;<strong> Price:  Rwf <span>  4000</span> </strong>
+        </label><br>
+        <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Mushrooms &nbsp;<strong> Price:  Rwf <span> 4500</span> </strong>
+        </label><br>
+        <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Sausage &nbsp;<strong> Price:  Rwf <span>  4000</span> </strong>
+        </label><br>
+        <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Onions &nbsp;<strong> Price:  Rwf <span>  2000</span> </strong>
+        </label><br>
+        <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Extracheese  &nbsp;<strong> Price:  Rwf <span>  4000</span> </strong>
+        </label><br>
+        <label>
+          <input type="radio" class="sm-radio-btn" onclick="checkedbutton()">Bacon &nbsp;<strong> Price:  Rwf <span>  5000</span> </strong>
+        </label><br>
+      </div>
+      <div class="col-md-4">
+        <label> <h3>Choose Pizza Crusts:</h3></label><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Thin Crust &nbsp;<strong> Price:  Rwf <span>  3000</span> </strong><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Flatbread Crust &nbsp;<strong> Price:  Rwf <span>  3000</span> </strong><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Crispy crust &nbsp;<strong> Price:  Rwf <span>  4000</span> </strong><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Stuffed crust &nbsp;<strong> Price:  Rwf <span>  5000</span> </strong><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Gluten-free &nbsp;<strong> Price:  Rwf <span>  7000</span> </strong><br>
+        <input type="radio" class="sm-radio-btn" onclick="checkedbutton()"> Thick Crust &nbsp;<strong> Price:  Rwf <span>  7000</span> </strong><br>
+      </div>
+      <button type="submit" class="btn-checkout">Checkout</button>
+      <div class="col-md-3 checkout"></div>
+    </div>
+  </form>
+  <div class="footer">
+    Contact on:pizza you want 
+    <img src="images/twitter.png"> 
+    <img src="images/facebook.png"> 
+    <p>Pizza you want! @2019</p>     
+  </div>
 </body>
 </html>
