@@ -1,5 +1,5 @@
 # pizza place project
-#### This project it is designed for pizza place client which deals to look for pizza they want, 2019
+#### This project it is designed for pizza place client which wants to look for pizza they want, 2019
 ####  **Author: Gentille**
 ## Description
 This application was designed for pizza place client which deals to look for pizza they want, they can choose pizza according to size toppings and crusts of pizza they wish to have.
