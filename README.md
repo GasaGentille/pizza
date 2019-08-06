@@ -1,15 +1,13 @@
-# pizza
-Hosted pizza place url
-Delani studio project
-#### This project it is designed for delani studio which deals with design,product development and management, 2019
+# pizza place project
+#### This project it is designed for pizza place client which deals to look for pizza they want, 2019
 ####  **Author: Gentille**
 ## Description
-This application has been created to help people to get different services according to what they want including branding strategy,interaction and visual design and user experience testing. So we are constantly coding and testing, the products we build are always ready to go live.
+This application was designed for pizza place client which deals to look for pizza they want, they can choose pizza according to size toppings and crusts of pizza they wish to have.
 ## Setup/Installation Requirements
 1. I have first initialized git to my local depository using:$ git init
-2. connect to GitHub repository using:$ git remote https://github.com/GasaGentille/delaniStudio.git
+2. connect to GitHub repository using:$ git remote
 3. Deploy project link to GitHub repository using: git push origin gh-pages
-4. To visit the website use the link: https://gasagentille.github.io/delaniStudio/
+4. To visit the website use the link:
 5. I do create also javascript folder containing jQuery framework and local one to interact with html for both input and output the result.
 ## Dependancies
 1. Page layout is depending on bootstrap and css
