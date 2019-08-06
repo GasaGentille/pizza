@@ -7,7 +7,7 @@ This application was designed for pizza place client which deals to look for piz
 1. I have first initialized git to my local depository using:$ git init
 2. connect to GitHub repository using:$ git remote https://github.com/GasaGentille/pizza.git
 3. Deploy project link to GitHub repository using: git push origin gh-pages
-4. To visit the website use the link:
+4. To visit the website use the link:https://gasagentille.github.io/pizza/
 5. I do create also javascript folder containing jQuery framework and local one to interact with html for both input and output the result.
 ## Dependancies
 1. Page layout is depending on bootstrap and css
