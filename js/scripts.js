@@ -25,15 +25,12 @@ function getSelectedItem(sel) {
   
   function checkedbutton(smRadioBtn){
     var smRadioBtn = document.querySelectorAll(".sm-radio-btn")
-    var sommes = 0;
+    var sommes = 0; 
     var allItem =""
     for(var i = 0; i < smRadioBtn.length; i++){
-        if (smRadioBtn[i].checked == true) {
+        if (smRadioBtn[i].checked == true) { 
             var nextS = smRadioBtn[i].nextSibling.nextSibling;
-            // var item = smRadioBtn[i].nextSibling;
             var nextS2 = nextS.nextSibling.nextSibling.firstChild.nextSibling;
-            
-            // console.log(nextS);
             var item = nextS.innerText;
             console.log(typeof(item));
             var  price = nextS2;
@@ -49,9 +46,7 @@ function getSelectedItem(sel) {
 
     }
 
-        //console.log(sommes);
-} 
-// JSON.stringify(label)
+}
 function checkOut(label, amount, total, allItem){
     console.log(label, amount);
 
@@ -61,7 +56,6 @@ function checkOut(label, amount, total, allItem){
         e.preventDefault();
         var result = document.querySelector(".checkout")
         result.innerText = allItem;
-        // document.querySelector(".total").innerText = total;
         var parag = document.createElement("P");
         parag.innerText = total;
         result.append(parag);
@@ -79,7 +73,6 @@ function checkOut(label, amount, total, allItem){
 function computeResult(total, allItem){
     document.querySelector(".delivar").addEventListener('click', e=>{
         e.preventDefault();
-        // var txt;
         var r = confirm("Can we help you for your pizza delivery to your appropriate place?");
 
         if (r == true) {
@@ -87,19 +80,19 @@ function computeResult(total, allItem){
             if(addr){
                 var delivCharge = 0;
                 var conf = confirm("you will be charged 2000rw for delivary");
+                ///////add
+                alert("Your pizza will be delivered to your location")
                 if(conf == true){
                     delivCharge = 2000;
                     var grandTotal = total + delivCharge;
                     var summary = "Selected items: " + allItem + " delivery charge: " + delivCharge + " Total amount to be paid: " + grandTotal;
                     var clientAddress = "  to the address: " +addr;
-
                     var finalResult = document.createElement("DIV");
                     finalResult.className = "final-result";
-                    finalResult.style.cssFloat = "right";
+                    // finalResult.style.cssFloat = "right";
                     finalResult.style.fontFamily = "";
                     finalResult.append(summary);
                     finalResult.append(clientAddress);
-                    // result.append(finalResult);
                     document.querySelector(".summary").append(finalResult);
 
                 }else{
@@ -114,7 +107,4 @@ function computeResult(total, allItem){
     });
 }
 
-
-// var item = smRadioBtn[i].nextSibling;
-
-//             var item = smRadioBtn[i].nextSibling;
+          var item = smRadioBtn[i].nextSibling;
